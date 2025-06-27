@@ -17,5 +17,3 @@ Rimachi Delgado, Sofia Guadalupe – u20231g648
 
 Rios Ballarta, Alessandro Yair Claudio – u20231g647
 
-Notas importantes
-Para que las imágenes del sitio se visualicen correctamente, es necesario descomprimir el archivo img.zip en la misma carpeta donde se encuentra el código fuente.
