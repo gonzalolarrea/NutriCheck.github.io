@@ -3,22 +3,27 @@ name: Deploy website
 on:
   push:
     branches:
-      - main  # o la rama que estés usando
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload artifacts
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: public  # Aquí le dices que publique el folder /public
+          path: public  # Asegúrate de que exista y contenga index.html
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
